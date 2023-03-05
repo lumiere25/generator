@@ -10,25 +10,25 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
-const loader = document.getElementById('loader');
+// const loader = document.getElementById('loader');
 
 // We have an empty array here because this will be filled with our data from the API
 let apiQuotes = [];
 
 // Show loading
-function loading() {
-  loader.hidden = false;
-  quoteContainer.hidden = true;
-}
+// function loading() {
+//   loader.hidden = false;
+//   quoteContainer.hidden = true;
+// }
 
 // Hide Loading
-function complete() {
-  quoteContainer.hidden = false;
-  loader.hidden = true;
-}
+// function complete() {
+//   quoteContainer.hidden = false;
+//   loader.hidden = true;
+// }
 
 function newQuote() {
-  loading();
+  // loading();
 const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
  // Check if author field is blank and replace with 'unknown';
   if(!quote.author) {
@@ -47,14 +47,14 @@ if(quote.text.length > 50) {
 // Set quote, hide loader
 
  quoteText.textContent = quote.text;
- complete();
+//  complete();
 }
 
 
 
 
 async function getQuotes() {
-  loading();
+  // loading();
   const apiUrl = 'https://jacintodesign.github.io/quotes-api/data/quotes.json';
   try {
     // This constant will not populate until there is some data fetched.
