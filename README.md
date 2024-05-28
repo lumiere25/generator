@@ -8,7 +8,7 @@ Allows users to generate a new quote with the click of a button.
 How to use:
 
 Git clone https://github.com/lumiere25/generator.git
-Navigate to the project directory in your ide:
+Navigate to the project directory in your vs code editor terminal:
 Example:
 cd "project name"
 
